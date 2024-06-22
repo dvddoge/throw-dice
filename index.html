@@ -8,20 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <h1>Roll Them</h1>
-        <div class="dice-selection">
-            <label for="dice-type">Chose your dice:</label>
-            <select id="dice-type">
-                <option value="4">D4</option>
-                <option value="6">D6</option>
-                <option value="8">D8</option>
-                <option value="10">D10</option>
-                <option value="12">D12</option>
-                <option value="20">D20</option>
-            </select>
+        <h1>Throw Dice</h1>
+        <div class="display-area">
+            <div id="selected-dice" class="selected-dice"></div>
+            <div id="total">Total <span>0</span></div>
         </div>
-        <div id="dice-result" class="dice-result">?</div>
-        <button id="roll-button">Rolar Dado</button>
+        <div class="dice-selection">
+            <button class="dice" data-sides="4">4</button>
+            <button class="dice" data-sides="6">6</button>
+            <button class="dice" data-sides="8">8</button>
+            <button class="dice" data-sides="10">10</button>
+            <button class="dice" data-sides="12">12</button>
+            <button class="dice" data-sides="20">20</button>
+            <button id="clear-dice">±</button>
+        </div>
+        <button id="roll-button">Roll</button>
     </div>
     <script src="script.js"></script>
 </body>
